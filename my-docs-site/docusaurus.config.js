@@ -16,12 +16,12 @@ const config = {
     v4: true,
   },
 
-  url: 'https://your-docusaurus-site.example.com',
-  baseUrl: '/',
-
-  organizationName: 'facebook',
+  url: 'https://emeseuk.github.io', // Cseréld le a saját GitHub felhasználónevedre!
+  baseUrl: '/DocusaurusProjekt/', // Cseréld le a repository nevére!
+  organizationName: 'emeseuk', // A GitHub felhasználóneved
+  projectName: '<DocusaurusProjekt', // A GitHub repository-d neve
+  trailingSlash: false,
   projectName: 'docusaurus',
-
   onBrokenLinks: 'throw',
 
   i18n: {
