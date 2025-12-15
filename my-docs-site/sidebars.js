@@ -28,6 +28,8 @@ const sidebars = {
       dirName: 'guides',
     },
   ],
+  
+  myApiSidebar: require('./docs/petstore/sidebar'),
 };
 
 export default sidebars;

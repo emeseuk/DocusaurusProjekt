@@ -1,0 +1,71 @@
+---
+id: update-user
+title: "Update user resource."
+description: "This can only be done by the logged in user."
+sidebar_label: "Update user resource."
+hide_title: true
+hide_table_of_contents: true
+api: eJztV8Fu4zYQ/RVWl90AshTHaQ8+bbrIIW2xCdbJoUiCBS1RFhOJVEnKimv43/uGkmwldpNdoLcG8IEm3wxnRjNvhuvA8YUNprdBbYUJ7sMgFTYxsnJSq2AaXOfSsoQrplWxYnPBUq0Em6+YywUr9GIhUiYVI+EoCANdCcNJ9CKFcF2l3IkbUhwGFTe8FE4Yum0dKPwhCA79Mgwk3VdxlwcvjSAALuSOKYH7nPaGiALaUoCN+KuWBsupM7UIA5vkouTBdB24VUWXWGekWgSbzX0LFtb9qtMVIZ5fdOMNZnBXPEnrhHLeM/KQ/LVOG7I00YrOSJ5XVSET73L8YEnJev9+PX8QiaMYGAqQk8LSqUwHGAmVCx+oTJuSu3brl1NsiCdeVgVA4+NNuIvYnn8DZABzfdwhkElj3Zc3JX7TuSJ4wb8LDYQlODyVxevYB2j+5HFRoksSqri1jTbp63Ljk8npzx6eI+m+E0vhmTnuanswuC++N33cDv088JOTZ4HfQPNT6f0cJC7d56TzBrTRxsYwIzqR94R4T4guIUZN04xI76g2hVCJTkX6niL/7xQhoBG20sq2H/nk+Hi/N9k6SYS1WV2wbZclZaeHwHOesq7TtZjTfYzvbEo7lulapQRLRcbrwh3oi0o8VUhHNF9hjDb/XQ+kAjjQqcMAqWL54tDZZtjxb1sNO/z9Lrzn3tRNG2CMHrmmoaSqvRU0Z0yDmIIQr/v62OAEy2U/pKBGAcqdq+w0jivh/AQwiWzDMfmYSOqYVzJeTgIaLaxIaiPdaka+t+71It94TfftokH/KV2yQjdtYZcURNkGFIfayL99SG/etsFri3spioZNEGSvt4FFYkpi0FLqVGYrRv9oplnp2jCeJPj+zs9RPO2RtG7P/UYbQ/j67VGsBn5g53dshH2G94humsuhpWNBSoyvu9nrvC+TltLGx0OS2jLRMyJq2WZINh2jbAnlJWsMSaOr9i0xbP8Pi3+8IcMz7T3ssmjWxplddZFnI3ZZCXV2dcEm0fEePfiBGT/OrPeQ5EAXJDjzmcXm3KKOdDtSDlQxixKTWVdJEWN/6tqP3plUwNeOlaSFz7G8U71ZGIpv++TYpcT9x/29o4hdtJe6XBqM7a5jEaYzv40v3Y64IWvEhyXm3UY65LKfuAkAT+WC7ME3Yah6o3mS/3SnekOVblguigpDM0M+G70UXo4cbHIUII3S7oOl90PJH1HNLMm5Wgi7uwHOSm+UdFYUGdOmP6NCj+7UNb0DGr6CkdLlzMnS2+sNeHkpcnwhFNwsQgz1IK+nSlv4pfGe6JxWomGZwOcHAxP+8mw2wS0IMIGQHES4hVSPdnqnRuz2Oh9+UiOgUGK52kV8AbPqOSVgH/wRkUS/7iv4aKvOosyS1uCB/xl5Przsh2+I54WexyXKBRxnTYKlVDH89PfZGBShIBeteFkcIZEBK+1lRmkqEzEgnQHVeEzc8T9PPF311QddTvDy0w7uZwPoQmMbtMGzCmkj2ImvnucUi+ko4v440mYRd7I2/uPi8/mX2fkIMlHu0FShmFi6rbkxdscnvutr60quBpd1Tzrf7HrXo5dVu961sx998XZE6MSTi6sCAfYDhfFtv20y3dM6DKZbhkOzyGEpna3XxAcg+c2GtkGQBgR7i+WSG8nnxEHoRKm0tAaRZbyw4hX7P37tmuMRe+PdfND0ntgVkfiSFzX9w9Lz/o6jN/fAdvRO9rXHn1srRtekZCf+9gS8CXsVZ5hyKvcvwn66oFa77eZXN9fAzrvXfOmniWCgOBz+QVjRx/4BspfMTg==
+sidebar_class_name: "put api-method"
+info_path: docs/petstore/swagger-petstore-openapi-3-0
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update user resource."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/user/{username}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This can only be done by the logged in user.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"username","in":"path","description":"name that need to be deleted","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"Update an existent user in the store","content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","format":"int64","example":10},"username":{"type":"string","example":"theUser"},"firstName":{"type":"string","example":"John"},"lastName":{"type":"string","example":"James"},"email":{"type":"string","example":"john@email.com"},"password":{"type":"string","example":"12345"},"phone":{"type":"string","example":"12345"},"userStatus":{"type":"integer","description":"User Status","format":"int32","example":1}},"xml":{"name":"user"},"title":"User"}},"application/xml":{"schema":{"type":"object","properties":{"id":{"type":"integer","format":"int64","example":10},"username":{"type":"string","example":"theUser"},"firstName":{"type":"string","example":"John"},"lastName":{"type":"string","example":"James"},"email":{"type":"string","example":"john@email.com"},"password":{"type":"string","example":"12345"},"phone":{"type":"string","example":"12345"},"userStatus":{"type":"integer","description":"User Status","format":"int32","example":1}},"xml":{"name":"user"},"title":"User"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"id":{"type":"integer","format":"int64","example":10},"username":{"type":"string","example":"theUser"},"firstName":{"type":"string","example":"John"},"lastName":{"type":"string","example":"James"},"email":{"type":"string","example":"john@email.com"},"password":{"type":"string","example":"12345"},"phone":{"type":"string","example":"12345"},"userStatus":{"type":"integer","description":"User Status","format":"int32","example":1}},"xml":{"name":"user"},"title":"User"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"successful operation"},"400":{"description":"bad request"},"404":{"description":"user not found"},"default":{"description":"Unexpected error","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"}},"required":["code","message"],"title":"Error"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

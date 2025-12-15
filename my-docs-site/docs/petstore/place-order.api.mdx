@@ -1,0 +1,71 @@
+---
+id: place-order
+title: "Place an order for a pet."
+description: "Place a new order in the store."
+sidebar_label: "Place an order for a pet."
+hide_title: true
+hide_table_of_contents: true
+api: eJztWFtv2zYU/iucXroCtmQ76dL6aVmXh2DDEtTpgC0JClo6sthKpEpScTzD/33foaRYaTJkBfbU5Skyee6X7xxmG3m5ctH8MnLeWIquR1FGLrWq9sroaB6dlzIlIYWmtTA2IyuUFr4gEejjaBSZmqxk6tMM9DXTnzEhrix9bsj5n0y2iebbKDXak/b8Keu6VGlgSz461rSNXFpQJfnLb2qCLLP8SKmHnNqyEq/I8a3KBjQKIldBWW5sJX179MMhDuhWVnUJoulkBxnkT7+a8c3ro6MZmD83UnvlN0/yH8yG/EdgdYWqf5aeBqzOW6VXQ84MBGOvKoqYw0vfuMfo76cmRFksWuqBVg6uNTeU8aFuKs5uSAsfDO4yKtUNWXxfQ2tqmPuenUtjSpI62uH6tir5RssqZCYkGMcISlDZZpwJh5ntmJ4T+80ldrxer8fs5bixJenUZJQ9p/rbSDWTWnK10a5N1mwy4T/3LXdNmpJzeVOKuwkQjZ4x/v9RH4ePlcSpvpGlyrAh1I1nzsPZ7CHV70wTqkLQbUrt8Y5NzWVT+ocM7zXd1igSygRZa+x/V2UMWw9zAFsqVLZcPXa3a7caxSFFzIOEPf31PlonwdRdG66KfGHCemRcMEP6Ar+SsEQlpluXHFnkirexbQRYBUHhfe3mSYLCDqQHsVvLFUoyViaRtUpuDqLdNXOmjUXtLtjx1ree5YNsWNc+FPybKzgvzbrttYojqNpo4tJY9VeI5/unbQjSkp6LQ+FSRDjIXcMimjMbpFQmU/lG8C/eIDemsUKmqWm0D4uizHpK/m7vw0EbQPj64RMNexMnv+Bg1JdrTzFCi7LVkNINLq6Kd/tN9KTvoRZlppM73GihYIgER8PeBg7ODseTo/HszcX01fzVdD57HU+Opn9G+34e9t6+27xtaMeG5SZ40JXIoo2jOO8iK8birCZ9fH4qDuLJAyy4KBRi57CMu+AB8wEamHERKkcspUOTmHZBH4gSDv2j8q5NYiH+MI1IpRa50qBvvKhYilzi80r3ZkkvLvvk71N+/f3Ds5exOG2V+kJZAIDvBoIweThGgNsHw0is6cUNXg9r5VGrmfAmEMBTtWJ7rPMixFCmxXdXujdUm7UoqKxFgxBUIcSBjx1cF+gufpj4F04sN6KSn9CqIi2kXpHba4CzKhilvKMyx3Omv+Mujq/0RQGX13IDI5UvBGM12xsM+FIpanhFGm6WIyERRECUcfDLVNQ7zU+mnFAXGKZMf3a8OIAWBJiJGkc8O0ulP7n5lR6Ly4timFJLEKjwudlHfAWzmmWMwuqDP2YQ6L/7Dn15J86hjdLW4IH/OXs+VPbVGpJlaZZJJR0SnTib4lPpBH4GfS4BBGjwxRtZlS9RyCCr3FnOZapSGoDKAEoCTdKBu0wDHAHFVdk2tydZ/bgnZ5QGahF2lMHMOq5RNiRmoXvuQygW1liG69jYVdLxuuTX07cnvy1OxuCJC48JCMGMwm3PTXE6nfEZI3cl9UBZ9zTW3buYoyq50uMvO3fw8v0X7+kO3zzd+gQjXYXhGHzZdnOjf6yPuhmNAVDwXMHFdssYAODe7fgYoGcBY5f4vJFWySXjziWvAh0+8qgJuBq9bU0cX7B6Ji+bbs94YuvfjXoRxymP839gDrOZZ9XdLDw/W1yAeNn9d6AKwzgaSB4Nf7DZu93f0IKysA==
+sidebar_class_name: "post api-method"
+info_path: docs/petstore/swagger-petstore-openapi-3-0
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Place an order for a pet."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/store/order"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Place a new order in the store.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","format":"int64","example":10},"petId":{"type":"integer","format":"int64","example":198772},"quantity":{"type":"integer","format":"int32","example":7},"shipDate":{"type":"string","format":"date-time"},"status":{"type":"string","description":"Order Status","example":"approved","enum":["placed","approved","delivered"]},"complete":{"type":"boolean"}},"xml":{"name":"order"},"title":"Order"}},"application/xml":{"schema":{"type":"object","properties":{"id":{"type":"integer","format":"int64","example":10},"petId":{"type":"integer","format":"int64","example":198772},"quantity":{"type":"integer","format":"int32","example":7},"shipDate":{"type":"string","format":"date-time"},"status":{"type":"string","description":"Order Status","example":"approved","enum":["placed","approved","delivered"]},"complete":{"type":"boolean"}},"xml":{"name":"order"},"title":"Order"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"id":{"type":"integer","format":"int64","example":10},"petId":{"type":"integer","format":"int64","example":198772},"quantity":{"type":"integer","format":"int32","example":7},"shipDate":{"type":"string","format":"date-time"},"status":{"type":"string","description":"Order Status","example":"approved","enum":["placed","approved","delivered"]},"complete":{"type":"boolean"}},"xml":{"name":"order"},"title":"Order"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"successful operation","content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","format":"int64","example":10},"petId":{"type":"integer","format":"int64","example":198772},"quantity":{"type":"integer","format":"int32","example":7},"shipDate":{"type":"string","format":"date-time"},"status":{"type":"string","description":"Order Status","example":"approved","enum":["placed","approved","delivered"]},"complete":{"type":"boolean"}},"xml":{"name":"order"},"title":"Order"}}}},"400":{"description":"Invalid input"},"422":{"description":"Validation exception"},"default":{"description":"Unexpected error","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"}},"required":["code","message"],"title":"Error"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
