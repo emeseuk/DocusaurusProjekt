@@ -1,0 +1,33 @@
+---
+slug: github-actions-learning
+title: Mit tanultam a GitHub Actions használatából?
+authors: [emese]
+tags: [github-actions, ci-cd, docusaurus, automation]
+---
+
+A Docusaurus projekt fejlesztése során először találkoztam komolyabban a **GitHub Actions** világával, és rengeteget tanultam belőle.  
+
+A célom az volt, hogy a dokumentáció **automatikusan felépüljön és publikálódjon** a GitHub Pages-re, valahányszor a `main` ágra pusholok. Ez elsőre egyszerű feladatnak tűnt, de a gyakorlatban sok érdekes dologgal találkoztam.
+
+## A workflow felépítése
+
+A legfontosabb felismerés az volt, hogy a GitHub Actions minden lépést **egy tiszta Ubuntu környezetben** futtat, ezért nekem kellett megmondanom:
+
+- melyik Node.js verziót használja,
+- hol találja a projektet (mivel nálam almappában volt),
+- hogyan telepítse a függőségeket,
+- hogyan generálja a Docusaurus API-dokumentációt,
+- és végül hogyan buildelje a weboldalt és deployolja a GitHub Pages-re.
+
+Külön tanulság volt, hogy a `cache-dependency-path` akkor működik jól, ha a `package-lock.json` valóban létezik a megadott útvonalon.
+
+## Projekt mappa a gyökéren belül
+
+Mivel a projekt egy almappában volt (`my-doc-site`), meg kellett értenem, hogy a workflow parancsok alapértelmezés szerint a **repo gyökerében** futnak. Emiatt kellett beállítani:
+
+```yaml
+defaults:
+  run:
+    working-directory: ./my-doc-site
+
+Ez biztosította, hogy az npm ci, a build és minden más a jó helyen fusson.
