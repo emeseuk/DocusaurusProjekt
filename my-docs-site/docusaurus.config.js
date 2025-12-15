@@ -83,15 +83,14 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'My Site',
+        title: 'My Little Pony',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'My Little Pony Logo',
+          src: 'img/pony1.png',
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            to: '/docs/tutorials/intro',
             position: 'left',
             label: 'Tutorial',
           },
@@ -111,7 +110,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/tutorials/intro',
               },
             ],
           },
